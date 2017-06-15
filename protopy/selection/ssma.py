@@ -188,7 +188,7 @@ class SSMA(InstanceReductionMixin):
 
     def crossover(self, parent_1, parent_2):
         size = len(parent_1)
-        mask = [0] * (size/2) + [1] * (size - size/2)
+        mask = [0] * (size // 2) + [1] * (size - size // 2)
         mask = np.asarray(mask, dtype=bool)
         np.random.shuffle(mask)
 
